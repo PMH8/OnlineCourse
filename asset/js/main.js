@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 
     // back to top
-    var heighToDisplayBackToTopButton = 1391.127197265625;
+    var heighToDisplayBackToTopButton = 1390;
     var heighToDisplayBackToTopButtonStatus = false;
     $(window).scroll(function() {
         console.log($(window).scrollTop());
