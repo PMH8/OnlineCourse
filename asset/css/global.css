@@ -2,3 +2,7 @@
     width: 40px;
     height: 30px;
 }
+.input_has_box_shadow:focus{
+    box-shadow: 0 0 15px 2px var(--main-color);
+    border: none;
+}

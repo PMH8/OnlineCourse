@@ -7,14 +7,10 @@ $(document).ready(function() {
             nav: false,
             touchDrag: true,
             pagination: false,
-
+            autoplay:true,
+            autoplayTimeout:3000,
             responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
+              
                 1000: {
                     items: 2
                 }
@@ -45,15 +41,17 @@ $(document).ready(function() {
         })
         // One page 
 
-
+    $(".menu-bar__home").click(function(){
+        $("html").animate({scrollTop:0},0)
+    })
     $(".menu-bar__courses").click(function() {
-        $("html").animate({ scrollTop: 1371.054443359375 }, 500);
+        $("html").animate({ scrollTop: 1300 }, 0);
     })
     $(".menu-bar__about").click(function() {
-        $("html").animate({ scrollTop: 666.7636108398438 }, 500);
+        $("html").animate({ scrollTop: 700 }, 0);
     })
     $(".menu-bar__contact").click(function() {
-        $("html").animate({ scrollTop: 3445.527099609375 }, 500);
+        $("html").animate({ scrollTop: 3449 }, 0);
     })
 
 
@@ -61,6 +59,7 @@ $(document).ready(function() {
     var heighToDisplayBackToTopButton = 1391.127197265625;
     var heighToDisplayBackToTopButtonStatus = false;
     $(window).scroll(function() {
+        console.log($(window).scrollTop());
         if ($((window)).scrollTop() > heighToDisplayBackToTopButton) {
             heighToDisplayBackToTopButtonStatus = true;
             if (heighToDisplayBackToTopButtonStatus) {
@@ -75,8 +74,8 @@ $(document).ready(function() {
     $(".back-to-top").click(function() {
         $("html").animate({
             scrollTop: 0
-        }, 1000)
+        }, 0)
     })
 
-
+    
 })

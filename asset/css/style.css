@@ -64,9 +64,8 @@ html {
     height: 90px;
     position: absolute;
     right: 98.5%;
-    background-image: url("../image/top_arrow1.png");
-    background-image: url("../image/top_arrow.png");
-    background-repeat: no-repeat;
+    background-color: var(--main-color);
+    transform:  skewX(20deg);
     z-index: 2;
 }
 
@@ -125,21 +124,25 @@ html {
     width: 85%;
     height: 40%;
     margin: auto;
-    border-radius: 2%;
+    border-radius: 8px;
     border: none;
     background-color: #e7e5e5;
     padding: 2px 15px;
     text-transform: uppercase;
 }
-
+.search-bar__input:focus{
+    box-shadow:0px 0px 15px 2px var(--main-color); 
+}
 .search-bar__icon {
-    background-color: var(--main-color);
-    width: 35px;
-    height: 35px;
+    
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 31%;
-    right: 10%;
+    top: 32%;
+    right: 12%;
     cursor: pointer;
+    
+    border-radius: 52%;
 }
 
 .user {
@@ -539,7 +542,7 @@ html {
     background-color: var(--main-color);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    box-shadow: 0px 2px 5px 2px var(--main-color);
+    
 }
 
 .sign-social__icon {
