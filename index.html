@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="asset/icon/icon-website.png">
     <link rel="stylesheet" href="asset/css/reset.css">
-
     <link rel="stylesheet" href="asset/css/global.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
-
+    <link rel="stylesheet" href="asset/css/responsive.css">
     <script src="asset/js/jquery.js"></script>
     <script src="asset/js/main.js"> </script>
+    <script src="asset/js/responsive.js"></script>
     <script src="OwlCarousel/dist/owl.carousel.js"></script>
+    
+
+
+
 
 
 
@@ -28,7 +33,7 @@
         <header>
             <div class="header-top container-fluid">
                 <div class="row">
-                    <div class="main-logo col-xl-3">
+                    <div class="main-logo  col-xl-3 ">
                         <img class="main-logo__image" src="asset/image/main-logo.png" alt="logo">
                         <div class="logo-text">
                             <p class="logo-text__up mb-0">self</p>
@@ -36,26 +41,29 @@
                         </div>
 
                     </div>
-                    <div class="header-information  row col-xl-9">
-
-                        <ul class="menu-bar__list col-xl-6 d-flex mb-0">
-                            <li class="menu-bar__item menu-bar__home text-uppercase ">home</li>
-                            <li class="menu-bar__item menu-bar__courses text-uppercase">courses</li>
-                            <li class="menu-bar__item menu-bar__instructor text-uppercase">Instructor</li>
-                            <li class="menu-bar__item menu-bar__about text-uppercase">about</li>
-                            <li class="menu-bar__item menu-bar__contact text-uppercase">contact</li>
+                    <div class="header-information  row col-xl-9 ">
+                        <ul class="menu-bar__list  col-xl-6 d-flex mb-0 flex-column flex-lg-row">
+                            <li class="menu-bar__item menu-bar__home text-uppercase">home</li>
+                            <li class="menu-bar__item menu-bar__courses text-uppercase  d-lg-block ">courses</li>
+                            <li class="menu-bar__item menu-bar__instructor text-uppercase   d-lg-block ">Instructor</li>
+                            <li class="menu-bar__item menu-bar__about text-uppercase   d-lg-block ">about</li>
+                            <li class="menu-bar__item menu-bar__contact text-uppercase  d-lg-block ">contact</li>
 
                         </ul>
-                        <div class="search-bar d-flex position-relative col-xl-4">
+                        <div class="search-bar  d-lg-flex position-relative  col-8 col-sm-4 col-xl-4 ">
                             <input class="search-bar__input" type="text" placeholder="Search">
                             <img class="search-bar__icon " src="asset/image/search_icon.png"></img>
                         </div>
-                        <div class="user d-flex col-xl-2">
+                        <div class="user  d-lg-flex col-xl-2">
                             <p class="signIn">sign in</p>
 
                             <p class="signUp">sign up</p>
                         </div>
+                        <div class="icon-reponsive d-none">
+                            <img src="asset/image/icon-responsive.png" alt="">
+                        </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="header-body container-fluid">
@@ -104,7 +112,7 @@
                         <div class="about-important col-xl-12 mt-4 text-center">
                             <h1 style="font-weight: bold;font-size: 50px;"><span style="color: var(--primary-color)">Some</span> <span style="color: var(--main-color);"> important facts</span></h1>
                             <p class="mt-3">luptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos a t consectetur illo culpa,</p>
-                            <div class="about-important__information">
+                            <div class="about-important__information col-xl-12">
                                 <div class="container">
                                     <div class="row">
 
@@ -140,7 +148,7 @@
             <div class="my-courses">
                 <div class="container">
                     <div class="row">
-                        <div class="my-courses__box col-xl-6">
+                        <div class="my-courses__box col-sm-12 col-xl-6">
                             <div class="my-courses__list">
                                 <div class="my-courses__item">
                                     <img src="asset/image/my1.jpg" alt="">
@@ -173,7 +181,7 @@
 
                             </div>
                         </div>
-                        <div class="my-courses__box col-xl-6">
+                        <div class="my-courses__box col-sm-12 col-xl-6">
                             <h1 style="font-weight: bold;font-size: 50px;text-align:right;"><span style="color: var(--primary-color)">My </span> <span style="color: var(--main-color);"> Courses</span></h1>
                             <article class="text-right">
                                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
@@ -277,7 +285,7 @@
             <div class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="footer-contact col-xl-3">
+                        <div class="footer-contact col-md-6 col-xl-3">
                             <h3>contact us</h3>
                             <ul class="footer-contact__list">
                                 <li class="footer-contact__item">
@@ -314,7 +322,7 @@
                             </ul>
 
                         </div>
-                        <div class="footer-courses col-xl-3">
+                        <div class="footer-courses col-md-6 col-xl-3">
                             <h3>courses</h3>
                             <ul class="footer-courses__list">
                                 <li class="footer-courses__item">
@@ -331,7 +339,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer-information col-xl-3">
+                        <div class="footer-information col-md-6 col-xl-3">
                             <h3>information</h3>
                             <ul class="footer-information__list">
                                 <li class="footer-information__item">
@@ -351,7 +359,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer-logo col-xl-3">
+                        <div class="footer-logo col-md-6 col-xl-3">
                             <img src="asset/image/logo1.jpg" alt="">
                         </div>
 

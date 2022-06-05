@@ -90,7 +90,7 @@ html {
 }
 
 .search-bar {
-    background-color: var(--primary-color);
+    background-color: #f4b328;
     /* justify-content: space-evenly center; */
 }
 
@@ -240,9 +240,8 @@ html {
 
 .about-important__information {
     margin-top: 60px;
-    height: 170px;
-    margin-right: -275px;
-    margin-left: -275px;
+    height: 220px;
+   
     background-color: var(--main-color);
     color: white;
 }
@@ -307,7 +306,7 @@ html {
 .my-courses__box .read-more-button {
     display: inline-block;
     position: absolute;
-    right: 0%;
+    right: 1%;
 }
 
 
@@ -630,7 +629,7 @@ html {
     position: fixed;
     z-index: 2;
     bottom: 50px;
-    right: 50px;
+    right: 3%;
     cursor: pointer;
     display: none;
 }

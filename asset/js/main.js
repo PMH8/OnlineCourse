@@ -10,7 +10,9 @@ $(document).ready(function() {
             autoplay:true,
             autoplayTimeout:3000,
             responsive: {
-              
+                0:{
+                  items:  1
+                },
                 1000: {
                     items: 2
                 }
@@ -59,7 +61,7 @@ $(document).ready(function() {
     var heighToDisplayBackToTopButton = 1390;
     var heighToDisplayBackToTopButtonStatus = false;
     $(window).scroll(function() {
-        console.log($(window).scrollTop());
+        // console.log($(window).scrollTop());
         if ($((window)).scrollTop() > heighToDisplayBackToTopButton) {
             heighToDisplayBackToTopButtonStatus = true;
             if (heighToDisplayBackToTopButtonStatus) {

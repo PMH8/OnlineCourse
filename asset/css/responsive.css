@@ -1,0 +1,124 @@
+@media (max-width:1580px) {
+
+    .header-information::before,
+    .search-bar::before,
+    .search-bar::after {
+        content: none;
+    }
+
+    .user,
+    .menu-bar__item {
+        font-size: 82%;
+    }
+
+    .header-information {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .user p.signIn {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:1200px) {
+    .my-courses__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .my-courses__item{
+            display: inline-block;
+    /* margin-bottom: 10px; */
+    position: relative;
+    overflow: hidden;
+    }
+    .subscribe-email input{
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        margin-bottom: 20px;
+    }
+    .subscribe-email button{
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+       
+    }
+  
+}
+    
+
+@media (max-width:990px) {
+    .header-body{
+        padding-top: 150px;
+    }
+    .header-information {
+        height: 50px;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .menu-bar__list {
+        width: 135px;
+        margin-top: 10px;
+
+
+    }
+
+    .menu-bar__item {
+        font-size: 20px;
+        margin-left: 12px;
+        margin-bottom: 10px;
+    }
+
+    .icon-reponsive {
+        display: block !important;
+        background-color: #f4b328;
+        position: absolute;
+        right: 12px;
+    }
+
+    .icon-reponsive img {
+        width: 50px;
+    }
+
+    .search-bar {
+        background-color: transparent;
+        margin-bottom: 10px;
+    }
+
+    .search-bar__input {
+        height: 35px;
+        margin-left: 5px;
+    }
+
+    .search-bar__icon {
+        top: 5%;
+        right: 20%;
+    }
+
+    .user {
+        width: 190px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .signInWindow,
+    .signUpWindow {
+        /* display: none; */
+        top:50%;
+    }
+    .read-more-button{
+        margin-bottom: 20px;
+    }
+    
+    
+}
+@media (max-width:990px){
+    .footer-courses{
+        padding-left: 15px;
+    }
+  
+}
